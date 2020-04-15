@@ -1,7 +1,5 @@
 require 'boris_bikes'
 
-describe "DockingStation" do
-  it "releases a bike" do
-    expect(DockingStation.new).to respond_to(:release_bike)
-  end
+describe DockingStation.new do
+  it { is_expected.to respond_to(:release_bike)}
 end
